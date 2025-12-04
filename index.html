@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STRIKE1///</title>
+    <link href="cyanobacteria.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+        /* Enhanced styles that work with cyanobacteria.css */
+        .container {
+            padding: 10px;
+            gap: 10px;
+        }
+        
+        /* Improved navigation */
+        nav {
+            position: relative;
+        }
+        
+        nav div {
+            background: linear-gradient(to right, var(--bg), var(--gradientBottom));
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px ridge var(--border);
+        }
+        
+        nav a {
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        nav a:hover, nav a:focus {
+            transform: translateX(5px);
+            box-shadow: 2px 0 0 var(--accent);
+        }
+        
+        /* Section improvements */
+        section {
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Header improvements */
+        header span {
+            text-shadow: 2px 2px 0 var(--text),
+                -2px 2px 0 var(--text),
+                2px -2px 0 var(--accent),
+                -2px -2px 0 var(--accent),
+                0 0 5px var(--gradientTop);
+        }
+        
+        /* Content improvements */
+        h1 {
+            background: linear-gradient(to right, transparent, var(--bg), transparent);
+            padding: 10px;
+            margin: 15px 0;
+        }
+        
+        h2 {
+            border-bottom: 1px ridge var(--border);
+            padding-bottom: 5px;
+            margin: 15px 0 10px 0;
+        }
+        
+        p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        /* List improvements */
+        ul, ol {
+            margin: 10px 0 10px 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        ul ul, ol ul {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        
+        /* Code block styling */
+        code {
+            background: rgba(0,0,0,0.05);
+            padding: 2px 5px;
+            border-radius: 3px;
+            border: 1px solid var(--border);
+        }
+        
+        /* Footer improvements */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            border-top: 2px ridge var(--border);
+        }
+        
+        /* Button styling */
+        .button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--bg), var(--gradientBottom));
+            border: 2px ridge var(--border);
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin: 10px 5px 5px 0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .button:hover, .button:focus {
+            background: linear-gradient(to right, var(--bg), var(--gradientBottom), var(--gradientTop));
+            transform: translateY(-2px);
+        }
+        
+        /* Status indicator */
+        .status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            margin-right: 5px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        /* Grid adjustments for better responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .small, .half, .large, .full {
+                flex: 1 1 100%;
+            }
+            
+            header span {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Content highlights */
+        .highlight {
+            background: linear-gradient(to right, transparent, var(--bg), transparent);
+            padding: 10px;
+            border-left: 3px solid var(--accent);
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>STRIKE1///</span>
+        </header>
+        
+        <div class="small">
+            <nav>
+                <div>NAVIGATION <span class="status"></span></div>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#resources">Resources</a>
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+                <a href="#archive">Archive</a>
+                <a href="#links">External Links</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <div class="highlight">
+                <strong>System Status</strong>
+                <p>All systems operational</p>
+                <a href="#" class="button">Login</a>
+            </div>
+        </div>
+        
+        <section class="large">
+            <h1>Welcome to STRIKE1///</h1>
+            
+            <div class="highlight">
+                <p>This is my digital domain - a space where technology, creativity, and experimentation converge.</p>
+            </div>
+            
+            <h2>Latest Updates</h2>
+            <p><strong>New project launched:</strong> Neural interface prototype</p>
+            <p><em>Blog updated:</em> The future of decentralized networks</p>
+            <p><code>System upgrade:</code> Enhanced security protocols active</p>
+            
+            <h2>Featured Content</h2>
+            <ul>
+                <li>Cybernetic Art Collection</li>
+                <li>Open Source Tools
+                    <ul>
+                        <li>Terminal Emulator v2.4</li>
+                        <li>Data Visualizer</li>
+                        <li>Network Scanner</li>
+                    </ul>
+                </li>
+                <li>Technical Writings</li>
+                <li>Experimental Interfaces</li>
+            </ul>
+            
+            <h2>Recent Projects</h2>
+            <p>Developing next-generation interfaces that bridge human and machine cognition through innovative design principles and cutting-edge technology.</p>
+            
+            <a href="#" class="button">View All Projects</a>
+            <a href="#" class="button">Documentation</a>
+        </section>
+                
+        <section class="half">
+            <h2>Digital Archive</h2>
+            <p>Exploring the intersection of retro computing aesthetics and future technologies. Our archive contains historical documentation, experimental code, and digital artifacts.</p>
+            <a href="#" class="button">Explore Archive</a>
+        </section>
+        
+        <section class="half">
+            <h2>Development Log</h2>
+            <p>Regular updates on ongoing projects, technical challenges, and breakthroughs in our development process.</p>
+            <a href="#" class="button">Read Log</a>
+        </section>
+        
+        <section class="full">
+            <h2>System Manifesto</h2>
+            <p>In an age of digital conformity, we champion the unconventional. Our mission is to explore the edges of technology, challenge established paradigms, and build tools that empower individual expression over corporate control.</p>
+            <p>We believe in open systems, transparent code, and the right to digital self-determination. The future isn't something that happens to us - it's something we build, line by line, byte by byte.</p>
+            
+            <ol>
+                <li>Privacy as a fundamental right</li>
+                <li>Open access to knowledge</li>
+                <li>User autonomy above all</li>
+                <li>Experimental approaches to problem-solving</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <span>cyanobacteria.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a> | STRIKE1/// System</span>
+    </footer>
+
+    <script>
+        // Simple interactive enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.addEventListener('mouseenter', function() {
+                    this.style.borderColor = 'var(--accent)';
+                });
+                
+                section.addEventListener('mouseleave', function() {
+                    this.style.borderColor = '';
+                });
+            });
+            
+            // Add click effects to buttons
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.addEventListener('mousedown', function() {
+                    this.style.transform = 'translateY(1px)';
+                });
+                
+                button.addEventListener('mouseup', function() {
+                    this.style.transform = '';
+                });
+            });
+            
+            // Simple navigation highlight
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('focus', function() {
+                    this.style.background = 'linear-gradient(to right, var(--bg), var(--gradientBottom), var(--gradientTop))';
+                });
+                
+                link.addEventListener('blur', function() {
+                    this.style.background = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
